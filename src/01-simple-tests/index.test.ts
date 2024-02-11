@@ -27,14 +27,18 @@ describe('simpleCalculator tests', () => {
   });
 
   test('should exponentiate two numbers', () => {
-    const result = simpleCalculator({ a: 2, b: 3, action: Action.Exponentiate });
+    const result = simpleCalculator({
+      a: 2,
+      b: 3,
+      action: Action.Exponentiate,
+    });
     expect(result).toBe(8);
     // Write your test here
   });
 
   test('should return null for invalid action', () => {
     const result = simpleCalculator({ a: 2, b: 3, action: 'add' });
-    expect(result).toBeNull()
+    expect(result).toBeNull();
     // Write your test here
   });
 
