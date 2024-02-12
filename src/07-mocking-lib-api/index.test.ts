@@ -16,12 +16,12 @@ beforeEach(() => {
   }));
 });
 
-afterEach(() => jest.clearAllMocks())
+afterEach(() => jest.clearAllMocks());
 
 describe('throttledGetDataFromApi', () => {
   test('should create instance with provided base url', async () => {
     await throttledGetDataFromApi(path);
-    expect(axios.create).toHaveBeenCalledWith({baseURL});
+    expect(axios.create).toHaveBeenCalledWith({ baseURL });
   });
 
   test('should perform request to correct provided url', async () => {

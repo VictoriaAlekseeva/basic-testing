@@ -15,15 +15,15 @@ describe('generateLinkedList', () => {
             value: null,
             next: null,
           },
-        }
-      }
-    }
+        },
+      },
+    };
     expect(generateLinkedList(elements)).toStrictEqual(expectedLinkedList);
   });
 
   // Check match by comparison with snapshot
   test('should generate linked list from values 2', () => {
-    const linkedList = generateLinkedList([1, 'ff'])
+    const linkedList = generateLinkedList([1, 'ff']);
     expect(linkedList).toMatchSnapshot();
   });
 });
